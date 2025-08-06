@@ -1,0 +1,120 @@
+{
+  "toolInfo": {
+    "name": "Asthma Symptom Checker",
+    "description": "Assessment tool for asthma-related breathing symptoms",
+    "category": "respiratory"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "How often do you experience wheezing or whistling sounds when breathing?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Rarely (less than once a week)", "value": 1},
+        {"text": "Sometimes (1-3 times per week)", "value": 2},
+        {"text": "Frequently (daily or most days)", "value": 3}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do you experience shortness of breath during normal activities?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Only during intense exercise", "value": 1},
+        {"text": "During moderate activity", "value": 2},
+        {"text": "Even during light activity or at rest", "value": 3}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How often do you have a persistent cough, especially at night?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Occasionally", "value": 1},
+        {"text": "Several times per week", "value": 2},
+        {"text": "Daily, especially at night", "value": 3}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Do you feel chest tightness or pressure?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Rarely", "value": 1},
+        {"text": "Sometimes", "value": 2},
+        {"text": "Frequently", "value": 3}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Do specific triggers worsen your breathing (dust, pollen, exercise, cold air)?",
+      "options": [
+        {"text": "No known triggers", "value": 0},
+        {"text": "One or two mild triggers", "value": 1},
+        {"text": "Multiple triggers with moderate impact", "value": 2},
+        {"text": "Many triggers causing severe symptoms", "value": 3}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How often do breathing problems interfere with your sleep?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Rarely (less than once a month)", "value": 1},
+        {"text": "Sometimes (1-3 times per month)", "value": 2},
+        {"text": "Frequently (weekly or more)", "value": 3}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Do you use quick-relief inhalers or have needed emergency treatment for breathing problems?",
+      "options": [
+        {"text": "Never needed emergency treatment", "value": 0},
+        {"text": "Use inhaler occasionally", "value": 1},
+        {"text": "Use inhaler regularly", "value": 2},
+        {"text": "Have needed emergency care", "value": 3}
+      ]
+    }
+  ],
+  "results": {
+    "low": {
+      "title": "Low Asthma Risk",
+      "description": "Your symptoms suggest a low likelihood of asthma. However, continue monitoring your respiratory health.",
+      "recommendations": "Maintain good respiratory health through regular exercise, avoiding known irritants, and practicing good hygiene. If symptoms develop or worsen, consider reassessment.",
+      "nextSteps": [
+        "Monitor breathing patterns during exercise",
+        "Avoid known respiratory irritants",
+        "Maintain good indoor air quality",
+        "Consider allergy testing if symptoms develop",
+        "Consult healthcare provider if symptoms worsen"
+      ]
+    },
+    "medium": {
+      "title": "Possible Asthma Symptoms",
+      "description": "Your symptoms suggest possible asthma or other respiratory condition that warrants medical evaluation.",
+      "recommendations": "Schedule an appointment with your healthcare provider for proper evaluation. Keep track of symptoms and potential triggers to discuss during your visit.",
+      "nextSteps": [
+        "Schedule appointment with healthcare provider",
+        "Keep a symptom diary noting triggers",
+        "Consider pulmonary function testing",
+        "Avoid known triggers when possible",
+        "Learn proper inhaler technique if prescribed",
+        "Develop an asthma action plan with your doctor"
+      ]
+    },
+    "high": {
+      "title": "High Asthma Risk",
+      "description": "Your symptoms strongly suggest asthma or another serious respiratory condition requiring immediate medical attention.",
+      "recommendations": "Seek prompt medical evaluation from a healthcare provider or pulmonologist. If experiencing severe breathing difficulties, seek emergency care immediately.",
+      "nextSteps": [
+        "Seek immediate medical evaluation",
+        "Contact emergency services if having severe breathing difficulty",
+        "See a pulmonologist for specialized care",
+        "Get proper asthma testing and diagnosis",
+        "Learn about rescue medications",
+        "Develop comprehensive asthma management plan",
+        "Consider allergy testing and immunotherapy"
+      ]
+    }
+  }
+}
