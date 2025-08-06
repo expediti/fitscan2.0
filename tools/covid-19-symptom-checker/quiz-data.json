@@ -1,0 +1,131 @@
+{
+  "toolInfo": {
+    "name": "COVID-19 Symptom Checker",
+    "description": "Assessment tool for COVID-19 symptoms and risk factors",
+    "category": "respiratory"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Do you currently have a fever (temperature above 100.4°F/38°C)?",
+      "options": [
+        {"text": "No", "value": 0},
+        {"text": "Mild fever (100.4-101.3°F)", "value": 2},
+        {"text": "Moderate fever (101.4-103°F)", "value": 3},
+        {"text": "High fever (above 103°F)", "value": 4}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Are you experiencing a new or worsening cough?",
+      "options": [
+        {"text": "No cough", "value": 0},
+        {"text": "Mild, occasional cough", "value": 1},
+        {"text": "Persistent dry cough", "value": 3},
+        {"text": "Severe coughing fits", "value": 4}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you have shortness of breath or difficulty breathing?",
+      "options": [
+        {"text": "No breathing difficulties", "value": 0},
+        {"text": "Mild shortness of breath with activity", "value": 2},
+        {"text": "Shortness of breath at rest", "value": 4},
+        {"text": "Severe difficulty breathing", "value": 5}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Have you lost your sense of taste or smell?",
+      "options": [
+        {"text": "Normal taste and smell", "value": 0},
+        {"text": "Reduced taste or smell", "value": 2},
+        {"text": "Complete loss of taste or smell", "value": 3},
+        {"text": "Both taste and smell completely gone", "value": 4}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Are you experiencing fatigue or unusual tiredness?",
+      "options": [
+        {"text": "Normal energy levels", "value": 0},
+        {"text": "Mild fatigue", "value": 1},
+        {"text": "Moderate fatigue affecting daily activities", "value": 2},
+        {"text": "Severe exhaustion", "value": 3}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Do you have a headache?",
+      "options": [
+        {"text": "No headache", "value": 0},
+        {"text": "Mild headache", "value": 1},
+        {"text": "Moderate headache", "value": 2},
+        {"text": "Severe headache", "value": 3}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Have you been in close contact with someone who tested positive for COVID-19 in the last 14 days?",
+      "options": [
+        {"text": "No known exposure", "value": 0},
+        {"text": "Brief contact with infected person", "value": 2},
+        {"text": "Extended contact with infected person", "value": 3},
+        {"text": "Living with someone who tested positive", "value": 4}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Are you experiencing any gastrointestinal symptoms (nausea, vomiting, diarrhea)?",
+      "options": [
+        {"text": "No GI symptoms", "value": 0},
+        {"text": "Mild nausea", "value": 1},
+        {"text": "Moderate GI symptoms", "value": 2},
+        {"text": "Severe GI symptoms", "value": 3}
+      ]
+    }
+  ],
+  "results": {
+    "low": {
+      "title": "Low COVID-19 Risk",
+      "description": "Based on your responses, you have a low likelihood of COVID-19. However, symptoms can develop gradually.",
+      "recommendations": "Continue monitoring your health and follow preventive measures. If you develop new symptoms or your condition worsens, consider retaking this assessment or consulting a healthcare provider.",
+      "nextSteps": [
+        "Continue wearing masks in crowded areas",
+        "Maintain good hygiene practices",
+        "Monitor for any new symptoms",
+        "Stay up to date with vaccinations",
+        "Contact healthcare provider if symptoms worsen",
+        "Consider testing if you've had known exposure"
+      ]
+    },
+    "medium": {
+      "title": "Moderate COVID-19 Risk",
+      "description": "Your symptoms suggest a moderate possibility of COVID-19. Testing and medical evaluation are recommended.",
+      "recommendations": "You should get tested for COVID-19 and consider consulting with a healthcare provider. Isolate yourself from others until you receive test results and medical guidance.",
+      "nextSteps": [
+        "Get tested for COVID-19 immediately",
+        "Isolate yourself from others",
+        "Contact your healthcare provider",
+        "Monitor symptoms closely",
+        "Notify close contacts about potential exposure",
+        "Follow local health department guidelines"
+      ]
+    },
+    "high": {
+      "title": "High COVID-19 Risk",
+      "description": "Your symptoms are highly suggestive of COVID-19, especially if you have severe breathing difficulties. Immediate medical attention may be needed.",
+      "recommendations": "Seek immediate medical attention, especially if you have difficulty breathing. Get tested for COVID-19 and begin isolation immediately. If you have severe symptoms, contact emergency services.",
+      "nextSteps": [
+        "Seek immediate medical attention",
+        "Call emergency services if you have severe breathing problems",
+        "Get tested for COVID-19 as soon as possible",
+        "Begin strict isolation immediately",
+        "Notify all close contacts",
+        "Follow all guidance from healthcare providers",
+        "Monitor oxygen levels if possible"
+      ]
+    }
+  }
+}
