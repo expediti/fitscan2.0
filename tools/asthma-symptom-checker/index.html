@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Symptom Checker - Free Assessment Tool | FitScan</title>
+    <meta name="description" content="Take our comprehensive asthma symptom assessment. Get instant insights about your breathing difficulties and respiratory health with our AI-powered checker. Free and confidential.">
+    <meta name="keywords" content="asthma symptoms, breathing problems, respiratory assessment, asthma test, wheezing checker, shortness of breath">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/tools.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Asthma Symptom Checker - FitScan">
+    <meta property="og:description" content="Free asthma symptom assessment tool with instant results">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://yourdomain.com/tools/asthma-symptom-checker/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Asthma Symptom Checker",
+      "description": "Comprehensive asthma symptom assessment tool for evaluating breathing difficulties and respiratory symptoms",
+      "url": "https://yourdomain.com/tools/asthma-symptom-checker/",
+      "mainEntity": {
+        "@type": "MedicalRiskCalculator",
+        "name": "Asthma Assessment Tool",
+        "description": "Interactive assessment for asthma and breathing-related symptoms"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "FitScan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FitScan",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourdomain.com/images/logo.png"
+        }
+      },
+      "medicalSpecialty": "Pulmonology",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Asthma"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/logo.png" alt="FitScan Logo" class="logo">
+                <span class="logo-text">FitScan</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/#about" class="nav-link">About</a>
+                <a href="/#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="quiz-header">
+            <div class="tool-icon asthma" style="width: 100px; height: 100px; margin: 0 auto 2rem;"></div>
+            <h1>Asthma Symptom Assessment</h1>
+            <p>This comprehensive assessment will help you understand your breathing symptoms and asthma risk factors. The questionnaire takes about 3-5 minutes to complete and provides personalized insights based on your responses.</p>
+            
+            <!-- Important Notice -->
+            <div class="assessment-notice" style="background: rgba(245, 158, 11, 0.1); border: 1px solid var(--accent-color); border-radius: var(--radius); padding: 1rem; margin: 2rem auto; max-width: 600px; font-size: 0.9rem; color: var(--text-gray);">
+                <strong>⚠️ Important:</strong> If you are experiencing severe breathing difficulties, chest pain, or inability to speak in full sentences, seek immediate medical attention or call emergency services.
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="tool-stats" style="display: flex; gap: 2rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
+                <div class="stat-item" style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">7</div>
+                    <div style="font-size: 0.8rem; color: var(--text-gray);">Questions</div>
+                </div>
+                <div class="stat-item" style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">3-5</div>
+                    <div style="font-size: 0.8rem; color: var(--text-gray);">Minutes</div>
+                </div>
+                <div class="stat-item" style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">Free</div>
+                    <div style="font-size: 0.8rem; color: var(--text-gray);">Assessment</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <!-- Quiz content will be loaded here by JavaScript -->
+            <div class="loading-state" style="text-align: center; padding: 3rem;">
+                <div class="loading-spinner" style="margin: 0 auto 1rem; width: 40px; height: 40px; border: 4px solid var(--bg-light); border-top: 4px solid var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                <p style="color: var(--text-gray);">Loading assessment...</p>
+            </div>
+        </div>
+        
+        <!-- Related Information -->
+        <div class="related-info" style="max-width: 800px; margin: 3rem auto; padding: 0 2rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">About Asthma</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div class="info-card" style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius); border-left: 4px solid #06b6d4;">
+                    <h3 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.1rem;">Common Symptoms</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.5;">Wheezing, shortness of breath, chest tightness, and persistent cough, especially at night or early morning.</p>
+                </div>
+                <div class="info-card" style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius); border-left: 4px solid #06b6d4;">
+                    <h3 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.1rem;">Common Triggers</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.5;">Allergens, exercise, cold air, stress, smoke, strong odors, and respiratory infections.</p>
+                </div>
+                <div class="info-card" style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius); border-left: 4px solid #06b6d4;">
+                    <h3 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.1rem;">When to See a Doctor</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.5;">Frequent symptoms, difficulty sleeping due to breathing, or if quick-relief medications aren't helping.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="/images/logo.png" alt="FitScan Logo" class="footer-logo">
+                    <span class="footer-logo-text">FitScan</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitScan. All rights reserved. This assessment is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/symptom-checker.js"></script>
+    <script src="/assets/js/analytics.js"></script>
+    <script src="/assets/js/accessibility.js"></script>
+    <script src="/assets/js/seo.js"></script>
+    
+    <!-- Custom CSS for loading animation -->
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-state {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tool-stats {
+                gap: 1rem;
+            }
+            
+            .related-info {
+                padding: 0 1rem;
+            }
+            
+            .info-card {
+                padding: 1rem !important;
+            }
+        }
+        
+        /* Accessibility improvements */
+        .assessment-notice {
+            outline: 2px solid transparent;
+            transition: outline 0.3s ease;
+        }
+        
+        .assessment-notice:focus-within {
+            outline: 2px solid var(--accent-color);
+        }
+        
+        /* Enhanced visual hierarchy */
+        .quiz-header h1 {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+    
+    <!-- Analytics tracking for tool usage -->
+    <script>
+        // Track asthma assessment tool page load
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.analytics) {
+                window.analytics.trackEvent('tool_page_view', 'asthma_symptom_checker', {
+                    tool_category: 'respiratory',
+                    page_path: window.location.pathname
+                });
+            }
+        });
+        
+        // Track time spent on page
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            if (window.analytics) {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                window.analytics.trackEvent('tool_time_spent', 'asthma_symptom_checker', {
+                    time_seconds: timeSpent
+                });
+            }
+        });
+    </script>
+</body>
+</html>
