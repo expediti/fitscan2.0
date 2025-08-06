@@ -1,0 +1,129 @@
+{
+  "toolInfo": {
+    "name": "Anxiety Symptom Checker",
+    "description": "Comprehensive assessment for anxiety-related symptoms",
+    "category": "mental-health"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Over the past two weeks, how often have you felt nervous, anxious, or on edge?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How often have you been unable to stop or control worrying?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Have you experienced excessive worry about different problems and activities?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How often do you have trouble relaxing?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Have you been feeling restless or having difficulty sitting still?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How often do you get easily annoyed or irritable?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Have you experienced fear that something awful might happen?",
+      "options": [
+        {"text": "Not at all", "value": 0},
+        {"text": "Several days", "value": 1},
+        {"text": "More than half the days", "value": 2},
+        {"text": "Nearly every day", "value": 3}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Do you experience physical symptoms like rapid heartbeat, sweating, or trembling when anxious?",
+      "options": [
+        {"text": "Never", "value": 0},
+        {"text": "Sometimes", "value": 1},
+        {"text": "Often", "value": 2},
+        {"text": "Always", "value": 3}
+      ]
+    }
+  ],
+  "results": {
+    "low": {
+      "title": "Low Anxiety Levels",
+      "description": "Your responses suggest minimal anxiety symptoms. You appear to be managing stress well.",
+      "recommendations": "Continue maintaining your current healthy coping strategies. Regular exercise, good sleep habits, and stress management techniques can help maintain your mental well-being.",
+      "nextSteps": [
+        "Continue regular self-care practices",
+        "Stay physically active",
+        "Maintain social connections",
+        "Practice mindfulness or meditation",
+        "Monitor any changes in your mental health"
+      ]
+    },
+    "medium": {
+      "title": "Moderate Anxiety Levels",
+      "description": "Your responses indicate moderate anxiety symptoms that may be affecting your daily life.",
+      "recommendations": "Consider implementing stress reduction techniques and lifestyle changes. If symptoms persist or worsen, consulting with a healthcare professional would be beneficial.",
+      "nextSteps": [
+        "Practice relaxation techniques like deep breathing",
+        "Consider therapy or counseling",
+        "Limit caffeine and alcohol intake",
+        "Establish a regular sleep schedule",
+        "Talk to a healthcare provider if symptoms persist",
+        "Join a support group or speak with trusted friends/family"
+      ]
+    },
+    "high": {
+      "title": "High Anxiety Levels",
+      "description": "Your responses suggest significant anxiety symptoms that may be substantially impacting your daily functioning.",
+      "recommendations": "It's strongly recommended to consult with a mental health professional for proper evaluation and treatment. Professional support can provide you with effective strategies and treatment options.",
+      "nextSteps": [
+        "Schedule an appointment with a mental health professional",
+        "Contact your primary care physician",
+        "Consider crisis resources if you're in immediate distress",
+        "Reach out to family, friends, or support groups",
+        "Avoid alcohol and recreational drugs",
+        "Practice grounding techniques during anxiety episodes"
+      ]
+    }
+  }
+}
