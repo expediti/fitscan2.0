@@ -1,0 +1,224 @@
+/* Mobile First Responsive Design */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: var(--shadow);
+    padding: 2rem 0;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu a {
+    padding: 0.5rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 200px;
+  }
+  
+  .health-icons {
+    gap: 1rem;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tools-section h2 {
+    font-size: 2rem;
+  }
+  
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tool-card {
+    padding: 1.5rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 1rem;
+  }
+  
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .tools-section {
+    padding: 60px 0;
+  }
+  
+  .tools-section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .filter-tags {
+    gap: 0.5rem;
+  }
+  
+  .filter-tag {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+  
+  .tool-card {
+    padding: 1.25rem;
+  }
+  
+  .tool-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .tool-card h3 {
+    font-size: 1.25rem;
+  }
+  
+  .tool-card p {
+    font-size: 0.9rem;
+  }
+  
+  .btn-tool {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .error-content h1 {
+    font-size: 4rem;
+  }
+  
+  .error-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .error-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Animation performance for mobile */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tool-card {
+    border: 2px solid var(--border-color);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-dark: #f9fafb;
+    --text-gray: #d1d5db;
+    --text-light: #9ca3af;
+    --bg-white: #111827;
+    --bg-gray: #1f2937;
+    --bg-light: #374151;
+    --border-color: #4b5563;
+  }
+  
+  .navbar {
+    background: var(--bg-gray);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--bg-gray) 0%, var(--bg-light) 100%);
+  }
+  
+  .tool-card {
+    background: var(--bg-gray);
+    border-color: var(--border-color);
+  }
+}
