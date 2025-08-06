@@ -1,4 +1,37 @@
-/* Performance Optimization Styles */
+/* Performance Optimization Styles - White Band Fixed */
+
+/* Remove any potential margin/padding issues */
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Restore necessary spacing */
+.container {
+  padding: 0 20px !important;
+}
+
+.hero {
+  padding: 120px 0 80px !important;
+}
+
+.tools-section {
+  padding: 80px 0 !important;
+}
+
+.footer {
+  padding: 3rem 0 1rem !important;
+}
+
+.tool-card {
+  padding: 2rem !important;
+  margin-bottom: 0 !important;
+}
+
+.nav-container {
+  padding: 1rem 2rem !important;
+}
 
 /* Reduce animations for low-end devices */
 @media (max-width: 480px), (prefers-reduced-motion: reduce) {
@@ -108,4 +141,28 @@
   .option-card {
     transition: none;
   }
+}
+
+/* Fix white band at bottom */
+html {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 0 !important;
 }
